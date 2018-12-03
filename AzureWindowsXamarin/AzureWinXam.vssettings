@@ -1,0 +1,148 @@
+<UserSettings><ApplicationIdentity version="15.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="Tab0.Name">Controllers &amp; Objects</PropertyValue><PropertyValue name="Tab0.View">0</PropertyValue><PropertyValue name="Tab0.UseDefaultName">true</PropertyValue><PropertyValue name="Tab0.RecordType">1</PropertyValue><PropertyValue name="Tab0.Position">19</PropertyValue><PropertyValue name="Tab1.Name">Controls</PropertyValue><PropertyValue name="Tab1.View">0</PropertyValue><PropertyValue name="Tab1.UseDefaultName">true</PropertyValue><PropertyValue name="Tab1.RecordType">1</PropertyValue><PropertyValue name="Tab1.Position">20</PropertyValue><PropertyValue name="Tab2.Name">Data Views</PropertyValue><PropertyValue name="Tab2.View">0</PropertyValue><PropertyValue name="Tab2.UseDefaultName">true</PropertyValue><PropertyValue name="Tab2.RecordType">1</PropertyValue><PropertyValue name="Tab2.Position">21</PropertyValue><PropertyValue name="Tab3.Name">Gesture Recognizers</PropertyValue><PropertyValue name="Tab3.View">0</PropertyValue><PropertyValue name="Tab3.UseDefaultName">true</PropertyValue><PropertyValue name="Tab3.RecordType">1</PropertyValue><PropertyValue name="Tab3.Position">22</PropertyValue><PropertyValue name="Tab4.Name">Windows &amp; Bars</PropertyValue><PropertyValue name="Tab4.View">0</PropertyValue><PropertyValue name="Tab4.UseDefaultName">true</PropertyValue><PropertyValue name="Tab4.RecordType">1</PropertyValue><PropertyValue name="Tab4.Position">23</PropertyValue><PropertyValue name="Tab5.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue><PropertyValue name="Tab5.Name">Standard</PropertyValue><PropertyValue name="Tab5.View">0</PropertyValue><PropertyValue name="Tab5.UseDefaultName">true</PropertyValue><PropertyValue name="Tab5.RecordType">4</PropertyValue><PropertyValue name="Tab5.Position">24</PropertyValue><PropertyValue name="TabCount">6</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">EF9FF13E6AFEBD2A649B5A8B6BE0FAD7</PropertyValue><PropertyValue name="Item0.Name">-- FUNCTION --</PropertyValue><PropertyValue name="Item0.UseDefaultName">true</PropertyValue><PropertyValue name="Item0.Tab">General</PropertyValue><PropertyValue name="Item0.TabID">General</PropertyValue><PropertyValue name="Item0.OriginalTabID">General</PropertyValue><PropertyValue name="Item0.OriginalTab">General</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">        private const string Url = "https://lbcalculator.azurewebsites.net/api/add/num1/{num1}/num2/{num2}";
+
+</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">7140407A066077BBC20CF1603576D3B6</PropertyValue><PropertyValue name="Item1.Name">-&gt; Run</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">General</PropertyValue><PropertyValue name="Item1.TabID">General</PropertyValue><PropertyValue name="Item1.OriginalTabID">General</PropertyValue><PropertyValue name="Item1.OriginalTab">General</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">
+            var result = new AdditionResult
+            {
+                Result = num1 + num2,
+                TimeOnServer = DateTime.Now
+            };
+
+            return new OkObjectResult(result);
+</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">EF9FF13E6AFEBD2A649B5A8B6BE0FAD7</PropertyValue><PropertyValue name="Item2.Name">-- CLIENT --</PropertyValue><PropertyValue name="Item2.UseDefaultName">true</PropertyValue><PropertyValue name="Item2.Tab">General</PropertyValue><PropertyValue name="Item2.TabID">General</PropertyValue><PropertyValue name="Item2.OriginalTabID">General</PropertyValue><PropertyValue name="Item2.OriginalTab">General</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">        private const string Url = "https://lbcalculator.azurewebsites.net/api/add/num1/{num1}/num2/{num2}";
+
+</PropertyValue><PropertyValue name="Item2.Position">3</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">EF9FF13E6AFEBD2A649B5A8B6BE0FAD7</PropertyValue><PropertyValue name="Item3.Name">URL</PropertyValue><PropertyValue name="Item3.UseDefaultName">true</PropertyValue><PropertyValue name="Item3.Tab">General</PropertyValue><PropertyValue name="Item3.TabID">General</PropertyValue><PropertyValue name="Item3.OriginalTabID">General</PropertyValue><PropertyValue name="Item3.OriginalTab">General</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">        private const string Url = "https://lbcalculator.azurewebsites.net/api/add/num1/{num1}/num2/{num2}";
+
+</PropertyValue><PropertyValue name="Item3.Position">4</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">AA493F19B156B980905E977F9845D25B</PropertyValue><PropertyValue name="Item4.Name">HttpClient</PropertyValue><PropertyValue name="Item4.UseDefaultName">true</PropertyValue><PropertyValue name="Item4.Tab">General</PropertyValue><PropertyValue name="Item4.TabID">General</PropertyValue><PropertyValue name="Item4.OriginalTabID">General</PropertyValue><PropertyValue name="Item4.OriginalTab">General</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">
+        private HttpClient _client;
+
+        private HttpClient Client
+        {
+            get
+            {
+                if (_client == null)
+                {
+                    _client = new HttpClient();
+                }
+
+                return _client;
+            }
+        }
+</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">EB54282519077A92132C090547B097B9</PropertyValue><PropertyValue name="Item5.Name">try/catch</PropertyValue><PropertyValue name="Item5.UseDefaultName">true</PropertyValue><PropertyValue name="Item5.Tab">General</PropertyValue><PropertyValue name="Item5.TabID">General</PropertyValue><PropertyValue name="Item5.OriginalTabID">General</PropertyValue><PropertyValue name="Item5.OriginalTab">General</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">
+                Result.Text = "Please wait...";
+                AddButton.IsEnabled = false;
+                Exception error = null;
+
+                try
+                {
+                }
+                catch (Exception ex)
+                {
+                    error = ex;
+                }
+
+                if (error != null)
+                {
+                    Result.Text = "Error!!";
+                    await DisplayAlert("There was an error", error.Message, "OK");
+                }
+
+                AddButton.IsEnabled = true;
+</PropertyValue><PropertyValue name="Item5.Position">6</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">D16981AB5C2F70E58E15FC91C3DBC8DD</PropertyValue><PropertyValue name="Item6.Name">-&gt; try</PropertyValue><PropertyValue name="Item6.UseDefaultName">true</PropertyValue><PropertyValue name="Item6.Tab">General</PropertyValue><PropertyValue name="Item6.TabID">General</PropertyValue><PropertyValue name="Item6.OriginalTabID">General</PropertyValue><PropertyValue name="Item6.OriginalTab">General</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">                    var url = Url.Replace("{num1}", number1.ToString())
+                        .Replace("{num2}", number2.ToString());
+
+                    var json = await Client.GetStringAsync(url);
+
+                    var deserialized = JsonConvert.DeserializeObject&lt;AdditionResult&gt;(json);
+
+                    Result.Text = deserialized.Result.ToString();
+</PropertyValue><PropertyValue name="Item6.Position">7</PropertyValue><PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item7.ID">EF9FF13E6AFEBD2A649B5A8B6BE0FAD7</PropertyValue><PropertyValue name="Item7.Name">-- VISION --</PropertyValue><PropertyValue name="Item7.UseDefaultName">false</PropertyValue><PropertyValue name="Item7.Tab">General</PropertyValue><PropertyValue name="Item7.TabID">General</PropertyValue><PropertyValue name="Item7.OriginalTabID">General</PropertyValue><PropertyValue name="Item7.OriginalTab">General</PropertyValue><PropertyValue name="Item7.RecordType">1</PropertyValue><PropertyValue name="Item7.Data">        private const string Url = "https://lbcalculator.azurewebsites.net/api/add/num1/{num1}/num2/{num2}";
+
+</PropertyValue><PropertyValue name="Item7.Position">8</PropertyValue><PropertyValue name="Item8.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item8.ID">3ACC60769175BA4EA651667AC005FCBD</PropertyValue><PropertyValue name="Item8.Name">_endpoint</PropertyValue><PropertyValue name="Item8.UseDefaultName">false</PropertyValue><PropertyValue name="Item8.Tab">General</PropertyValue><PropertyValue name="Item8.TabID">General</PropertyValue><PropertyValue name="Item8.OriginalTabID">General</PropertyValue><PropertyValue name="Item8.OriginalTab">General</PropertyValue><PropertyValue name="Item8.RecordType">1</PropertyValue><PropertyValue name="Item8.Data">        private PredictionEndpoint _endpoint;
+
+</PropertyValue><PropertyValue name="Item8.Position">9</PropertyValue><PropertyValue name="Item9.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item9.ID">6133FFFB2A9647347E38B084BEB3DEB0</PropertyValue><PropertyValue name="Item9.Name">-&gt; Clicked 1</PropertyValue><PropertyValue name="Item9.UseDefaultName">false</PropertyValue><PropertyValue name="Item9.Tab">General</PropertyValue><PropertyValue name="Item9.TabID">General</PropertyValue><PropertyValue name="Item9.OriginalTabID">General</PropertyValue><PropertyValue name="Item9.OriginalTab">General</PropertyValue><PropertyValue name="Item9.RecordType">1</PropertyValue><PropertyValue name="Item9.Data">                if (_endpoint == null)
+                {
+                    _endpoint = new PredictionEndpoint
+                    {
+                        ApiKey = App.PredictionKey
+                    };
+                }
+</PropertyValue><PropertyValue name="Item9.Position">10</PropertyValue><PropertyValue name="Item10.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item10.ID">4AED46431C6EAC8D8485763F6041C9A7</PropertyValue><PropertyValue name="Item10.Name">-&gt; Clicked 2</PropertyValue><PropertyValue name="Item10.UseDefaultName">false</PropertyValue><PropertyValue name="Item10.Tab">General</PropertyValue><PropertyValue name="Item10.TabID">General</PropertyValue><PropertyValue name="Item10.OriginalTabID">General</PropertyValue><PropertyValue name="Item10.OriginalTab">General</PropertyValue><PropertyValue name="Item10.RecordType">1</PropertyValue><PropertyValue name="Item10.Data">
+                ResultLabel.Text = "Please wait...";
+                DisplayImage.Source = null;
+
+                await CrossMedia.Current.Initialize();
+
+                if (!CrossMedia.Current.IsCameraAvailable
+                    || !CrossMedia.Current.IsTakePhotoSupported)
+                {
+                    await DisplayAlert(
+                        "No Camera",
+                        ":( No camera available.",
+                        "OK");
+                    return;
+                }
+</PropertyValue><PropertyValue name="Item10.Position">11</PropertyValue><PropertyValue name="Item11.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item11.ID">790685133FEF9D9E722AC3AFB78A4419</PropertyValue><PropertyValue name="Item11.Name">-&gt; Clicked 3</PropertyValue><PropertyValue name="Item11.UseDefaultName">false</PropertyValue><PropertyValue name="Item11.Tab">General</PropertyValue><PropertyValue name="Item11.TabID">General</PropertyValue><PropertyValue name="Item11.OriginalTabID">General</PropertyValue><PropertyValue name="Item11.OriginalTab">General</PropertyValue><PropertyValue name="Item11.RecordType">1</PropertyValue><PropertyValue name="Item11.Data">
+                var file = await CrossMedia.Current.TakePhotoAsync(
+                    new StoreCameraMediaOptions
+                    {
+                        Directory = "FruitRecognizer",
+                        Name = "test.jpg"
+                    });
+
+                if (file == null)
+                {
+                    return;
+                }
+</PropertyValue><PropertyValue name="Item11.Position">12</PropertyValue><PropertyValue name="Item12.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item12.ID">0994308097ECEDCA5883EED585FBD438</PropertyValue><PropertyValue name="Item12.Name">-&gt; Clicked 4</PropertyValue><PropertyValue name="Item12.UseDefaultName">false</PropertyValue><PropertyValue name="Item12.Tab">General</PropertyValue><PropertyValue name="Item12.TabID">General</PropertyValue><PropertyValue name="Item12.OriginalTabID">General</PropertyValue><PropertyValue name="Item12.OriginalTab">General</PropertyValue><PropertyValue name="Item12.RecordType">1</PropertyValue><PropertyValue name="Item12.Data">
+                // Give the device some time to come back to the UI
+                // before starting recognition
+                Device.BeginInvokeOnMainThread(() =&gt;
+                {
+                    ResultLabel.Text = RecognizePicture(file);
+                    DisplayImage.Source = ImageSource.FromFile(file.Path);
+                });
+</PropertyValue><PropertyValue name="Item12.Position">13</PropertyValue><PropertyValue name="Item13.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item13.ID">2D792DF8B9053A6AE9329F7DA03C07C7</PropertyValue><PropertyValue name="Item13.Name">RecognizePicture</PropertyValue><PropertyValue name="Item13.UseDefaultName">false</PropertyValue><PropertyValue name="Item13.Tab">General</PropertyValue><PropertyValue name="Item13.TabID">General</PropertyValue><PropertyValue name="Item13.OriginalTabID">General</PropertyValue><PropertyValue name="Item13.OriginalTab">General</PropertyValue><PropertyValue name="Item13.RecordType">1</PropertyValue><PropertyValue name="Item13.Data">
+        private string RecognizePicture(MediaFile file)
+        {
+            var message = "Nothing recognized...";
+
+            try
+            {
+                if (file != null)
+                {
+                }
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }
+
+            return message;
+        }
+</PropertyValue><PropertyValue name="Item13.Position">14</PropertyValue><PropertyValue name="Item14.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item14.ID">34AD488C6654A02BDD0F34A190F31575</PropertyValue><PropertyValue name="Item14.Name">-&gt; if</PropertyValue><PropertyValue name="Item14.UseDefaultName">false</PropertyValue><PropertyValue name="Item14.Tab">General</PropertyValue><PropertyValue name="Item14.TabID">General</PropertyValue><PropertyValue name="Item14.OriginalTabID">General</PropertyValue><PropertyValue name="Item14.OriginalTab">General</PropertyValue><PropertyValue name="Item14.RecordType">1</PropertyValue><PropertyValue name="Item14.Data">                    IEnumerable&lt;ImageTagPredictionModel&gt; tags = null;
+
+                    using (var stream = file.GetStream())
+                    {
+                        tags = _endpoint.PredictImage(Guid.Parse(App.ProjectId), stream)
+                            .Predictions
+                            .OrderByDescending(p =&gt; p.Probability);
+                    }
+</PropertyValue><PropertyValue name="Item14.Position">15</PropertyValue><PropertyValue name="Item15.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item15.ID">767D47B012537D6C65E0CD20FAF38DA4</PropertyValue><PropertyValue name="Item15.Name">-&gt; if 2</PropertyValue><PropertyValue name="Item15.UseDefaultName">false</PropertyValue><PropertyValue name="Item15.Tab">General</PropertyValue><PropertyValue name="Item15.TabID">General</PropertyValue><PropertyValue name="Item15.OriginalTabID">General</PropertyValue><PropertyValue name="Item15.OriginalTab">General</PropertyValue><PropertyValue name="Item15.RecordType">1</PropertyValue><PropertyValue name="Item15.Data">
+                    var bestTag = tags
+                        .FirstOrDefault(p =&gt; p.Probability &gt; 0.5);
+
+                    if (bestTag != null)
+                    {
+                        message = $"{bestTag.Tag} ({bestTag.Probability:P1})";
+                    }
+                    else
+                    {
+                        message = $"Not quite sure...";
+
+                        foreach (var tag in tags)
+                        {
+                            message += Environment.NewLine
+                                + $"({tag.Tag}, {tag.Probability:P1})";
+                        }
+                    }
+</PropertyValue><PropertyValue name="Item15.Position">16</PropertyValue><PropertyValue name="ItemCount">16</PropertyValue></Category></Category></UserSettings>
